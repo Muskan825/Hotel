@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear; 
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: .5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    font-size: 1.8rem;
+}
+.header #logo img{
+    width: 60px;
+    border-radius: 10px;
+}
+.header a{
+    font-size: 1.8rem;
+    margin-left: 1 rem;
+    color: gray;
+
+}
+.header a:hover{
+   color: black;
+}
+.main-background{
+    background: url(./assets/img_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main-text{
+    text-align: center;
+}
+.inner-book{
+    width: 100%;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.inner-book input{
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+
+}
+.book-btn{
+    padding: 1rem 2rem;
+    margin: 5px;
+    border-radius: 5px;
+    background: rgb(227, 197, 108);
+}
+.book-btn a{
+    color: black;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.padding{
+    padding: 30px 80px 30px 80px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+}
+.gallery .big{
+    width:40%;
+    padding: 10px;
+}
+.gallery .big .vrWhite{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10000;
+    position: absolute;
+    top: 1180px;
+    left:100px
+}
+.gallery .big .v{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: green;
+    color: White;
+    z-index: 10000;
+    position: absolute;
+    top: 1200px;
+    left:120px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 550;
+}
+.gallery .big .r{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    z-index: 10000;
+    position: absolute;
+    top: 1215px;
+    left:140px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 550;
+    margin: 2px;
+}
+.gallery .big img{
+    width: 100%;
+    height: 460px;
+    border-radius: 10px;
+}
+.gallery .many{
+    width: 60%;
+}
+.gallery .many img{
+    width: 48%;
+    height: 230px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.telLink a{
+    color: black;
+    font-weight: 550;
+}
+.info{
+    border-bottom: 1px solid gray;
+}
+.info .textInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text h2 a{
+    color: blue;
+    text-decoration: underline;
+}
+.info .text{
+    width: 80%;
+}
+.info .map{
+    width: 20%;
+}
+.info .map a img{
+    width: 100px;
+}
+.facilities ul{
+    display: flex;
+    font-size: 1.5rem;
+    list-style-type: disc;
+    margin: 4px;
+}
+.facilities ul li{
+    margin: 10px;
+}
+.allInfo h3{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.boxHead{
+    padding-left:80px;
+}
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    .book-btn{
+       width: 100%;
+       margin-top: .5rem;
+    
+    }
+    .book-section{
+        padding: 2rem 0;
+    }
+}
